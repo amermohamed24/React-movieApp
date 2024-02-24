@@ -1,0 +1,72 @@
+/* css custom variables */
+:root {
+    --pramiry: #222831;
+
+    --white: #fff:
+}
+
+/* Header css */
+.header{
+    background-color: var(--pramiry);
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.logo a{
+    text-decoration:none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.nav ul{
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+}
+.nav ul li{
+    margin-right: 30px;
+    display: inline-block;
+    
+} 
+@media (max-width:550px){
+    .nav ul li{
+        margin: 0 5px;
+    }
+}
+.nav ul li:first-child{
+    padding: 5px;
+}
+.nav ul li:nth-child(2){
+    padding: 5px;
+}
+.nav ul li:last-child{
+    margin-right: 0;
+}
+
+span{
+    color: #00ADB5;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.btn{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+@media(max-width:768px){
+    .btn{
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+}

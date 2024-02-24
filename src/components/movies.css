@@ -1,0 +1,129 @@
+.watch-list{
+    margin: 30px 0;
+}
+.watch-list .container{
+    display: block;
+}
+.Heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.span-watchList{
+    display: block;
+    background-color: #00ADB5;
+    color:aliceblue;
+    padding: 5px 10px;
+    border-radius:999px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.head-watchlist{
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.movie-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.card{
+    height:350px;
+    width: 250px;
+    margin-bottom: 10px;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.card img{
+    height: 350px;
+    width: 250px;
+    border-radius: 5px;
+
+}
+/* Resopnse */
+
+@media (max-width: 992px) {
+    .movie-grid {
+        grid-template-columns: repeat(3, 1fr);
+        }
+}
+@media (max-width:768px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .card {
+        margin: auto;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+        padding: 0;
+        }
+    
+    .card img {
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+    
+        }
+}
+
+/* controles css */
+
+.control{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    padding: 3px;
+    opacity: 0;
+    transition: all 0.3s  ease;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.card:hover .overlay{
+    border: 3px solid #00ADB5;
+}
+.card:hover .control {
+    opacity: 50;
+}
+
+.ctr-btn{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+    color: #00ADB5;
+    font-size: 1.75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ctr-btn-x{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+    color: #00ADB5;
+    font-size: 1.75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ctr-btn:hover{
+    color: rgb(255, 255, 255);
+}
+.ctr-btn-x:hover{
+    color: red;
+}
